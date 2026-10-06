@@ -286,4 +286,60 @@
       "inject"
     ]
   }
+  {
+      "package": "ua-parser-js",
+      "version": "0.7.29",
+      "category": "Compromised release / embedded malware",
+      "reason": "A compromised publisher account released malicious versions of a legitimate package.",
+      "source": "https://www.cisa.gov/news-events/alerts/2021/10/22/malware-discovered-popular-npm-package-ua-parser-js"
+    },
+    {
+      "package": "coa",
+      "version": "2.0.3",
+      "category": "Compromised release / embedded malware",
+      "reason": "A legitimate npm package was hijacked to distribute credential-stealing malware.",
+      "source": "https://github.com/advisories/GHSA-73qr-pfmq-6rp8"
+    },
+    {
+      "package": "rc",
+      "version": "1.2.9",
+      "category": "Compromised release / embedded malware",
+      "reason": "This release is listed in the embedded-malware advisory for the rc account takeover.",
+      "source": "https://github.com/advisories/GHSA-g2q5-5433-rhrf"
+    },
+    {
+      "package": "event-stream",
+      "version": "3.3.6",
+      "category": "Supply chain compromise through a malicious dependency",
+      "reason": "A malicious actor added flatmap-stream to this legitimate package's dependency tree.",
+      "source": "https://github.com/advisories/GHSA-mh6f-8j2x-4483"
+    },
+    {
+      "package": "flatmap-stream",
+      "version": "0.1.1",
+      "category": "Known malicious package",
+      "reason": "The malicious package associated with the event-stream supply chain incident; included directly for manifest-only detection.",
+      "source": "https://github.com/advisories/GHSA-mh6f-8j2x-4483"
+    },
+    {
+      "package": "crossenv",
+      "version": "6.1.1",
+      "category": "Typosquatting / environment-variable theft",
+      "reason": "Impersonated cross-env while collecting and exfiltrating environment variables during installation.",
+      "source": "https://snyk.io/jp/blog/typosquatting-attacks/"
+    },
+    {
+      "package": "colors",
+      "version": "1.4.1",
+      "category": "Protestware / maintainer sabotage",
+      "reason": "The maintainer introduced an infinite loop that disrupted applications.",
+      "source": "https://www.sonatype.com/blog/npm-libraries-colors-and-faker-sabotaged-in-protest-by-their-maintainer-what-to-do-now"
+    },
+    {
+      "package": "faker",
+      "version": "6.6.6",
+      "category": "Maintainer sabotage / removed functionality",
+      "reason": "The maintainer removed functional code from this release, breaking consumers.",
+      "source": "https://www.sonatype.com/blog/npm-libraries-colors-and-faker-sabotaged-in-protest-by-their-maintainer-what-to-do-now"
+    }
 }
